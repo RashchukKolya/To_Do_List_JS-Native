@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main {
+    background-color: grey;
+    min-height: 100vh;
+}
+
+.form {
+    width: 70%;
+    display: flex;
+    margin: auto;
+    padding-top: 5px;
+}
+
+.inputTitle, .inputTask, .button, .button_edit {
+    font-size: 20px;
+    border-radius: 5px;
+    border: 1px solid #000;
+    outline: none;
+    width: 40%;
+}
+
+.button, .button_edit {
+    width: 10%;
+    font-weight: 700;
+}
+
+.btnSortByTime, .btnSortByTitle {
+
+}
