@@ -19,10 +19,14 @@ function card(timeParam, titleParam, taskParam, deleteParam, editParam, editedPa
     let time = document.createElement('p');
     let deleteItem = document.createElement('button');
     deleteItem.setAttribute('data-id', timeParam);
+    deleteItem.classList.add('delete')
     let editItem = document.createElement('button');
     editItem.setAttribute('data-key', +timeParam + 10);
+    editItem.classList.add('edit');
     let edited = document.createElement('p');
     edited.style.color = 'red';
+    edited.style.fontStyle= 'italic';
+    edited.style.fontSize= '14px';
     li.classList.add('item');
 
     list.append(li);

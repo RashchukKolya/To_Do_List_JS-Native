@@ -16,7 +16,7 @@
     padding-top: 5px;
 }
 
-.inputTitle, .inputTask, .button, .button_edit {
+.inputTitle, .inputTask, .button, .button_edit, .btnSortByTime, .btnSortByTitle {
     font-size: 20px;
     border-radius: 5px;
     border: 1px solid #000;
@@ -27,8 +27,55 @@
 .button, .button_edit {
     width: 10%;
     font-weight: 700;
+    cursor: pointer;
 }
 
-.btnSortByTime, .btnSortByTitle {
+.button:hover, .button_edit:hover {
+    color: forestgreen
+}
 
+.wrapper {
+    display: flex;
+    width: 16%;
+    margin: 1% auto;
+}
+.btnSortByTime, .btnSortByTitle {
+    width: 50%;
+    font-size: 16px;
+    font-weight: 700;
+    font-style: italic;
+    cursor: pointer;
+}
+
+.btnSortByTime:hover, .btnSortByTitle:hover{
+    color: blue;
+}
+
+.list {
+    width: 70%;
+    margin: auto;
+    list-style: none;
+}
+
+.item {
+    margin-bottom: 1%;
+    border-radius: 5px;
+    border: 1px solid #000;
+    background-color: #fff;
+    padding:5px;
+}
+
+.edit, .delete {
+    border-radius: 5px;
+    border: 1px solid #000;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-style: italic;
+    margin: 2px;
+    padding: 2px;
+    cursor: pointer;
+}
+
+.edit:hover, .delete:hover {
+    color: red;
 }
